@@ -40,6 +40,10 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    background-color: #e3f2f6;
+    font-family: 'Kosugi Maru', sans-serif;
+    display: flex;
+    text-align: center;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -58,7 +62,6 @@ a:not([class]) {
 /* img要素の扱いを簡単にする */
 img {
     max-width: 100%;
-    display: block;
 }
 
 /* Natural flow and rhythm in articles by default */
@@ -87,6 +90,14 @@ select {
 }
 }
 
+body > .wrapper {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 .mainTitle {/*親div*/
     position: relative;/*相対配置*/
@@ -94,7 +105,8 @@ select {
 
 .mainTitle h1 {
         position: absolute;/*絶対配置*/
-        color:#333333;
+        color:#965b2b;
+        font-weight: bold;
         top: 50%;
         left: 50%;
         -ms-transform: translate(-50%,-50%);
@@ -102,25 +114,53 @@ select {
         transform: translate(-50%,-50%);
         margin:0;
         padding:0;
-        }ｓ
+        }
         .park_title {
             display: flex;
-        }
+            }
         .tdl{
             color: #ff2aad;
+            margin-right: 50px;
         }
         .tds{
             color:#2047fd;
         }
         .tdl h1{
             font-family: 'Passion One', cursive;
-            font-size: 35px;
+            font-size: 55px;
+        }
+        .tdl_ja_title {
+            font-weight: bold;
+            color: #ff91d3;
+        }
+        .tdl_hours{
+            color: #ff2aad;
+            margin-top: 20px;
+            font-size: 25px;
         }
         .tds h1{
             font-family: 'Passion One', cursive;
-            font-size: 35px;
+            font-size: 55px;
+        }
+        .tds_ja_title{
+            font-weight: bold;
+            color: #607dff;
+        }
+        .tds_hours{
+            color:#2047fd;
+            margin-top: 20px;
+            font-size: 25px;
         }
         .main-title {
             width: 300px;
             height: 80px;
+            background-color: aliceblue;
+        }
+        .weather_section{
+            margin-top: 50px;
+        }
+        .day_weather {
+            display: flex;
+            background-color: aliceblue;
+            width: 100%;
         }
