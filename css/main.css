@@ -102,12 +102,10 @@ select {
         transform: translate(-50%,-50%);
         margin:0;
         padding:0;
-        }
-
+        }ｓ
         .park_title {
             display: flex;
         }
-
         .tdl{
             color: #ff2aad;
         }
@@ -121,9 +119,6 @@ select {
         .tds h1{
             font-family: 'Passion One', cursive;
             font-size: 35px;
-        }
-        .weather {
-            display: flex;
         }
         .main-title {
             width: 300px;
