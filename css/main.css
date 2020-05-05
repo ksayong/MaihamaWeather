@@ -29,6 +29,7 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    background-color: #e6f6ff;
 }
 
 article,aside,details,figcaption,figure,
@@ -91,7 +92,7 @@ table {
 hr {
     display:block;
     height:1px;
-    border:0;  
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
@@ -100,3 +101,30 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+.mainTitle {/*親div*/
+    position: relative;/*相対配置*/
+    }
+
+    .mainTitle h1 {
+        position: absolute;/*絶対配置*/
+        color:#333333;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        margin:0;
+        padding:0;
+        }
+
+        .mainTitle img {
+            position: absolute;/*絶対配置*/
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            margin:0;
+            padding:0;
+            }
