@@ -30,6 +30,7 @@ time, mark, audio, video {
 body {
     line-height:1;
     background-color: #e6f6ff;
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
 }
 
 article,aside,details,figcaption,figure,
@@ -118,13 +119,17 @@ input, select {
         padding:0;
         }
 
-        .mainTitle img {
-            position: absolute;/*絶対配置*/
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%,-50%);
-            -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-            margin:0;
-            padding:0;
-            }
+        .tdl{
+            color: #ff2aad;
+        }
+        .tds{
+            color:#2047fd;
+        }
+        .tdl h1{
+            font-family: 'Passion One', cursive;
+            font-size: 35px;
+        }
+        .tds h1{
+            font-family: 'Passion One', cursive;
+            font-size: 35px;
+        }
