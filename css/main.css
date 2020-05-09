@@ -99,6 +99,19 @@ body > .wrapper {
     margin: 0 auto;
 }
 
+.morning {
+    background-color: #e3f2f6;
+}
+.noon {
+    background-color: #b6e4ff;
+}
+.afternoon {
+    background-color: #FCE8B0;
+}
+.night {
+    background-color: #1D233E;
+}
+
 .mainTitle {/*親div*/
     position: relative;/*相対配置*/
     }
