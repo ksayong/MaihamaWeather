@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>舞浜てんき</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
@@ -35,29 +36,27 @@
         </section>
         <section class="weather_section">
             <div class="main-title">
-                <h1>舞浜のてんき</h1>
+                <h1>舞浜の天気</h1>
             </div>
             <div class="day_weather">
                 <div class="weater_morning">
-                    <h3>あさ</h3>
-                    <img src="image/weater_sun.png" alt="">
+                    <img src="image/weater_sun.png" alt="weather_png" class="weather_png">
                     <p class="temperature"><span>16</span>℃</p>
                     <p class="sunrise">日の出　〇〇：〇〇</p>
                 </div>
                 <div class="weater_day">
-                    <h3>ひる</h3>
-                    <img src="image/weater_cloudyRain.png" alt="">
+                    <img src="image/weater_cloudyRain.png" alt="weather_png" class="weather_png">
                     <p class="temperature"><span>20</span>℃</p>
                 </div>
                 <div class="weater_night">
-                    <h3>よる</h3>
-                    <img src="image/weater_star.png" alt="">
+                    <img src="image/weater_star.png" alt="weather_png" class="weather_png">
                     <p class="temperature"><span>18</span>℃</p>
                     <p class="sunrise">日没　〇〇：〇〇</p>
                 </div>
             </div>
         </section>
     </div>
+    <script src="js/time_change.js"></script>
 </body>
 
 </html>
