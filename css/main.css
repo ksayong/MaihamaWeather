@@ -128,8 +128,11 @@ body > .wrapper {
         .tdl h1{
             font-family: 'Passion One', cursive;
             font-size: 55px;
+            line-height: 1;
+            margin-bottom: 10px;
         }
         .tdl_ja_title {
+            font-size: 20px;
             font-weight: bold;
             color: #ff91d3;
         }
@@ -141,8 +144,11 @@ body > .wrapper {
         .tds h1{
             font-family: 'Passion One', cursive;
             font-size: 55px;
+            line-height: 1;
+            margin-bottom: 10px;
         }
         .tds_ja_title{
+            font-size: 20px;
             font-weight: bold;
             color: #607dff;
         }
@@ -152,15 +158,33 @@ body > .wrapper {
             font-size: 25px;
         }
         .main-title {
-            width: 300px;
-            height: 80px;
+            width: 250px;
+            height: 70px;
+            margin: auto;
+            border-radius: 100px 100px 0 0;
             background-color: aliceblue;
         }
+        .main-title h1 {
+            padding: 20px;
+            text-align: center;
+            color: #403380;
+                }
         .weather_section{
             margin-top: 50px;
         }
+        .weather_png {
+            width: 70%;
+        }
+        .temperature span{
+            padding: 20px;
+            font-size: 40px;
+            color:#ff66cc;
+        }
         .day_weather {
             display: flex;
+            padding: 30px;
             background-color: aliceblue;
             width: 100%;
+            border-radius: 30px;
+            margin-bottom: 50px;
         }
