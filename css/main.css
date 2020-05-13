@@ -95,8 +95,12 @@ body > .wrapper {
 }
 
 .wrapper {
-    max-width: 1000px;
+    max-width: 750px;
     margin: 0 auto;
+}
+
+.sky-color {
+    width: 100%;
 }
 
 .morning {
@@ -133,10 +137,13 @@ body > .wrapper {
             }
         .tdl{
             color: #ff2aad;
-            margin-right: 50px;
+            display: inline-block;
+            width: 50%;
         }
         .tds{
             color:#2047fd;
+            display: inline-block;
+            width: 50%;
         }
         .tdl h1{
             font-family: 'Passion One', cursive;
@@ -200,4 +207,16 @@ body > .wrapper {
             width: 100%;
             border-radius: 30px;
             margin-bottom: 50px;
+        }
+        .weater_morning {
+            display: inline-block;
+            width: 30%;
+        }
+        .weater_day {
+            display: inline-block;
+            width: 30%;
+        }
+        .weater_night {
+            display: inline-block;
+            width: 30%;
         }
