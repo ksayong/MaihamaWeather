@@ -123,6 +123,7 @@ body > .wrapper {
 .mainTitle h1 {
         position: absolute;/*絶対配置*/
         color:#965b2b;
+        font-size: 1.3em;
         font-weight: bold;
         top: 50%;
         left: 50%;
@@ -147,35 +148,35 @@ body > .wrapper {
         }
         .tdl h1{
             font-family: 'Passion One', cursive;
-            font-size: 55px;
+            font-size: 3.5em;
             line-height: 1;
             margin-bottom: 10px;
         }
         .tdl_ja_title {
-            font-size: 20px;
+            font-size: 1.2em;
             font-weight: bold;
             color: #ff91d3;
         }
         .tdl_hours{
             color: #ff2aad;
             margin-top: 20px;
-            font-size: 25px;
+            font-size: 1.1em;
         }
         .tds h1{
             font-family: 'Passion One', cursive;
-            font-size: 55px;
+            font-size: 3.5em;
             line-height: 1;
             margin-bottom: 10px;
         }
         .tds_ja_title{
-            font-size: 20px;
+            font-size: 1.2em;
             font-weight: bold;
             color: #607dff;
         }
         .tds_hours{
             color:#2047fd;
             margin-top: 20px;
-            font-size: 25px;
+            font-size: 1.1em;
         }
         .main-title {
             width: 250px;
