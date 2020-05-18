@@ -209,15 +209,15 @@ body > .wrapper {
             border-radius: 30px;
             margin-bottom: 50px;
         }
-        .weater_morning {
+        .weather_morning {
             display: inline-block;
             width: 30%;
         }
-        .weater_day {
+        .weather_day {
             display: inline-block;
             width: 30%;
         }
-        .weater_night {
+        .weather_night {
             display: inline-block;
             width: 30%;
         }
