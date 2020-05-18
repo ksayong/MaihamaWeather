@@ -41,16 +41,19 @@
                     <h1>舞浜の天気</h1>
                 </div>
                 <div class="day_weather">
-                    <div class="weater_morning">
+                    <div class="weather_morning">
                         <img src="image/weater_sun.png" alt="weather_png" class="weather_png">
                         <p class="temperature"><span>16</span>℃</p>
                         <p class="sunrise">日の出　〇〇：〇〇</p>
                     </div>
-                    <div class="weater_day">
-                        <img src="image/weater_cloudyRain.png" alt="weather_png" class="weather_png">
-                        <p class="temperature"><span>20</span>℃</p>
+                    <div class="weather_day">
+                        <p v-if="condition.main == 'Rain'"><img src="image/rain.png" alt="Rainy"></p>
+                        <p v-else-if="condition.main == 'Clouds'"><img src="image/cloudy.png" alt="Cloudy"></p>
+                        <p v-else-if="condition.main == 'Clear'"><img src="image/sunny.png" alt="Sunny"></p>
+                        <p v-else><img src="image/sunny.png" alt="Sunset"></p>
+                        <p class="temperature"><span></span>{{ temp | roundUp }}</span>&deg;C</p>
                     </div>
-                    <div class="weater_night">
+                    <div class="weather_night">
                         <img src="image/weater_star.png" alt="weather_png" class="weather_png">
                         <p class="temperature"><span>18</span>℃</p>
                         <p class="sunrise">日没　〇〇：〇〇</p>
