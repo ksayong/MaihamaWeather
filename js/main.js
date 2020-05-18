@@ -20,7 +20,6 @@ var app = new Vue({
     mounted: function () {
         axios.get('https://api.openweathermap.org/data/2.5/weather?q=Urayasu,jp&units=metric&appid=b60a9e35aacf10a739593a8245b04046')
             .then(function (response) {
-                this.city = response.data.name
                 this.temp = response.data.main.temp
                 this.condition = response.data.weather[0]
             }.bind(this))
