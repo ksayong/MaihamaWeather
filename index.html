@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>舞浜てんき</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
@@ -14,7 +12,7 @@
 </head>
 
 <body>
-    <div class="sky-color">
+    <div class="sky-color" id="app">
         <div class="wrapper">
             <section class="OperatingHours">
                 <div class="mainTitle">
@@ -41,17 +39,20 @@
                     <h1>舞浜の天気</h1>
                 </div>
                 <div class="day_weather">
-                    <div class="weater_morning">
-                        <img src="image/weater_sun.png" alt="weather_png" class="weather_png">
+                    <div class="weather_morning">
+                        <img src="image/sunny.png" alt="weather_png" class="weather_png">
                         <p class="temperature"><span>16</span>℃</p>
                         <p class="sunrise">日の出　〇〇：〇〇</p>
                     </div>
-                    <div class="weater_day">
-                        <img src="image/weater_cloudyRain.png" alt="weather_png" class="weather_png">
-                        <p class="temperature"><span>20</span>℃</p>
+                    <div class="weather_day">
+                        <p v-if="condition.main == 'Rain'"><img src="image/rain.png" alt="Rainy"></p>
+                        <p v-else-if="condition.main == 'Clouds'"><img src="image/cloudy.png" alt="Cloudy"></p>
+                        <p v-else-if="condition.main == 'Clear'"><img src="image/sunny.png" alt="Sunny"></p>
+                        <p v-else><img src="image/sunny.png" alt="Sunset"></p>
+                        <p class="temperature"><span></span>{{ temp | roundUp }}</span>℃</p>
                     </div>
-                    <div class="weater_night">
-                        <img src="image/weater_star.png" alt="weather_png" class="weather_png">
+                    <div class="weather_night">
+                        <img src="image/star.png" alt="weather_png" class="weather_png">
                         <p class="temperature"><span>18</span>℃</p>
                         <p class="sunrise">日没　〇〇：〇〇</p>
                     </div>
@@ -59,6 +60,10 @@
             </section>
         </div>
     </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
