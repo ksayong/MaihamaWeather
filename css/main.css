@@ -220,7 +220,7 @@ body > .wrapper {
         @media screen and (max-width:560px){
             /*画面幅が560pxまでの時~スマホ対応~*/
             .wrapper {
-                max-width: 300px;
+                max-width: 330px;
                 margin: 0 auto;
             }
             .OperatingHours{
