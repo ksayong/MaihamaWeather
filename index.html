@@ -45,11 +45,14 @@
                         <p class="sunrise">日の出　〇〇：〇〇</p>
                     </div>
                     <div class="weather_day">
-                        <p v-if="condition.main == 'Rain'"><img src="image/rain.png" alt="Rainy"></p>
-                        <p v-else-if="condition.main == 'Clouds'"><img src="image/cloudy.png" alt="Cloudy"></p>
-                        <p v-else-if="condition.main == 'Clear'"><img src="image/sunny.png" alt="Sunny"></p>
-                        <p v-else><img src="image/sunny.png" alt="Sunset"></p>
-                        <p class="temperature"><span></span>{{ temp | roundUp }}</span>℃</p>
+                        <p v-if="condition.main == 'Rain'"><img src="image/rain.png" alt="Rainy" 　class="weather_png">
+                        </p>
+                        <p v-else-if="condition.main == 'Clouds'"><img src="image/cloudy.png" alt="Cloudy"
+                                　class="weather_png"></p>
+                        <p v-else-if="condition.main == 'Clear'"><img src="image/sunny.png" alt="Sunny"
+                                　class="weather_png"></p>
+                        <p v-else><img src="image/sunny.png" alt="Sunset" 　class="weather_png"></p>
+                        <p class="temperature"><span>{{ temp | roundUp }}</span>℃</p>
                     </div>
                     <div class="weather_night">
                         <img src="image/star.png" alt="weather_png" class="weather_png">
