@@ -134,6 +134,8 @@ body > .wrapper {
     background-color: #1D233E;
 }
 
+@media screen and (min-width:781px){
+
 .mainTitle {/*親div*/
     position: relative;/*相対配置*/
     }
@@ -234,3 +236,4 @@ body > .wrapper {
             display: inline-block;
             width: 35%;
         }
+    }
