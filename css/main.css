@@ -194,7 +194,7 @@ body > .wrapper {
             margin-top: 50px;
         }
         .weather_png {
-            width: 50%;
+            width: 60%;
         }
         .temperature span{
             padding: 20px;
@@ -209,15 +209,10 @@ body > .wrapper {
             border-radius: 30px;
             margin-bottom: 50px;
         }
-        .weather_morning {
-            display: inline-block;
-            width: 30%;
+        [v-cloak] {
+            display: none;
         }
-        .weather_day {
+        .weather_caption {
             display: inline-block;
-            width: 30%;
-        }
-        .weather_night {
-            display: inline-block;
-            width: 30%;
+            width: 35%;
         }
