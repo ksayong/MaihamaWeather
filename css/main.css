@@ -219,6 +219,67 @@ body > .wrapper {
 
         @media screen and (max-width:560px){
             /*画面幅が560pxまでの時~スマホ対応~*/
-
-
+            .wrapper {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            .OperatingHours{
+                margin: 50px 0;
+            }
+            .mainTitle h1 {
+                font-size: 0.9em;
+                }
+            .mainTitle_img {
+                width: 70%;
+            }
+            .park_icon {
+                width: 50%;
+                margin-top: 10px;
+            }
+            .tdl h1{
+                font-size: 2em;
+                line-height: 0.8;
+            }
+            .tds h1{
+                font-size: 2em;
+                line-height: 0.8;
+            }
+            .tdl_ja_title{
+                font-size: 0.9em;
+            }
+            .tds_ja_title{
+                font-size: 0.9em;
+            }
+            .tdl_hours{
+                margin-top: 18px;
+                font-size: 0.6em;
+            }
+            .tds_hours{
+                margin-top: 18px;
+                font-size: 0.6em;
+            }
+            .main-title {
+                width: 140px;
+                height: 40px;
+                margin: auto;
+                border-radius: 50px 50px 0 0;
+                background-color: aliceblue;
+            }
+            .main-title h1 {
+                padding: 20px;
+                font-size: 1em;
+            }
+            .day_weather {
+                display: flex;
+                padding: 20px;
+                background-color: aliceblue;
+            }
+            .temperature span{
+                padding: 8px;
+                font-size: 1.4em;
+                color:#ff66cc;
+            }
+            .sunrise {
+                font-size: 0.1em;
+            }
         }
