@@ -209,15 +209,10 @@ body > .wrapper {
             border-radius: 30px;
             margin-bottom: 50px;
         }
-        .weather_morning {
-            display: inline-block;
-            width: 30%;
+        [v-cloak] {
+            display: none;
         }
-        .weather_day {
+        .weather_caption {
             display: inline-block;
-            width: 30%;
-        }
-        .weather_night {
-            display: inline-block;
-            width: 30%;
+            width: 35%;
         }
