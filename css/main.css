@@ -104,16 +104,16 @@ body > .wrapper {
 }
 
 .morning {
-    background-color: #e3f2f6;
+    background-color: #def8ff;
 }
 .noon {
-    background-color: #b6e4ff;
+    background-color: #b3e9fd;
 }
 .afternoon {
     background-color: #FCE8B0;
 }
 .night {
-    background-color: #1D233E;
+    background-color: #0c346b;
 }
 
 .mainTitle {/*親div*/
@@ -137,12 +137,12 @@ body > .wrapper {
             display: flex;
             }
         .tdl{
-            color: #ff2aad;
+            color: #e06297;
             display: inline-block;
             width: 50%;
         }
         .tds{
-            color:#2047fd;
+            color:#00779c;
             display: inline-block;
             width: 50%;
         }
@@ -155,10 +155,10 @@ body > .wrapper {
         .tdl_ja_title {
             font-size: 1.2em;
             font-weight: bold;
-            color: #ff91d3;
+            color: #eb82ae;
         }
         .tdl_hours{
-            color: #ff2aad;
+            color: #dd4685;
             margin-top: 20px;
             font-size: 1.1em;
         }
@@ -171,10 +171,10 @@ body > .wrapper {
         .tds_ja_title{
             font-size: 1.2em;
             font-weight: bold;
-            color: #607dff;
+            color:#41a8c7;
         }
         .tds_hours{
-            color:#2047fd;
+            color:#00779c;
             margin-top: 20px;
             font-size: 1.1em;
         }
