@@ -200,10 +200,19 @@ body > .wrapper {
         .weather_png {
             width: 60%;
         }
-        .temperature span{
+        .temperature{
+            width: 30%;
+        }
+        .temperature p{
+            font-size:4.2em;
+            text-align: center;
             padding: 20px;
-            font-size: 40px;
-            color:#ff66cc;
+            color:#e67cc2;
+            margin-left: 40px;
+        }
+        .temperature span {
+            font-size: 30px;
+            margin-left: 5px;
         }
         .day_weather {
             display: flex;
@@ -217,15 +226,27 @@ body > .wrapper {
             display: none;
         }
         .weather_caption {
-            display: inline-block;
-            width: 35%;
+            width: 30%;
+            margin-left: 20px;
         }
-
+        .weather_info{
+            width: 30%;
+            margin-left:40px;
+        }
+        .weather_info p{
+            font-size: 1.3em;
+            color: #4d4d4d;
+            text-align: left;
+            line-height: normal;
+        }
+        .weather_info img{
+            width: 25%;
+        }
         @media screen and (max-width:560px){
             /*画面幅が560pxまでの時~スマホ対応~*/
             .wrapper {
                 max-width: 330px;
-                margin: 0 auto;
+                margin: 80px auto;
             }
             .OperatingHours{
                 margin: 50px 0;
@@ -275,13 +296,37 @@ body > .wrapper {
             }
             .day_weather {
                 display: flex;
-                padding: 20px;
+                padding: 15px;
                 background-color: aliceblue;
             }
+            .temperature p{
+                font-size:2.3em;
+                text-align: center;
+                margin-left: 10px;
+            }
             .temperature span{
-                padding: 8px;
-                font-size: 1.4em;
+                font-size: 20px;
                 color:#ff66cc;
+            }
+            .weather_caption {
+                text-align: center;
+                width:35%;
+                margin-left:10px;
+            }
+            .weather_info{
+                margin-left: 0;
+            }
+            .weather_info p{
+                font-size: 0.7em;
+                margin-top: 20%;
+                margin-left:0;
+            }
+            .weather_info img{
+                width: 30%;
+            }
+            .weather_png {
+                margin-top: 20px;
+                margin-left: 0;
             }
             .sunrise {
                 font-size: 0.1em;

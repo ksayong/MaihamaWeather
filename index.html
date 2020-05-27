@@ -39,25 +39,21 @@
                     <h1>舞浜の天気</h1>
                 </div>
                 <div class="day_weather">
-                    <div class="weather_caption">
-                        <img src="image/sunny.png" alt="weather_png" class="weather_png">
-                        <p class="temperature"><span>16</span>℃</p>
-                        <p class="sunrise">日の出〇〇：〇〇</p>
+                    <div class="temperature">
+                        <p>{{ temp | roundUp }}<span>℃</span></p>
                     </div>
                     <div class="weather_caption" v-cloak>
                         <p v-if="condition.main == 'Rain'"><img src="image/rain.png" alt="Rainy" 　class="weather_png">
                         </p>
                         <p v-else-if="condition.main == 'Clouds'"><img src="image/cloudy.png" alt="Cloudy"
-                                　class="weather_png"></p>
+                                class="weather_png"></p>
                         <p v-else-if="condition.main == 'Clear'"><img src="image/sunny.png" alt="Sunny"
-                                　class="weather_png"></p>
+                                class="weather_png"></p>
                         <p v-else><img src="image/sunny.png" alt="Sunset" 　class="weather_png"></p>
-                        <p class="temperature"><span>{{ temp | roundUp }}</span>℃</p>
                     </div>
-                    <div class="weather_caption">
-                        <img src="image/star.png" alt="weather_png" class="weather_png">
-                        <p class="temperature"><span>18</span>℃</p>
-                        <p class="sunrise">日没〇〇：〇〇</p>
+                    <div class="weather_info">
+                        <p><img src="image/Wind.png" alt="">風量{{}}<span>m</span></p>
+                        <p><img src="image/sunset.png" alt="">日没{{}}</p>
                     </div>
                 </div>
             </section>
