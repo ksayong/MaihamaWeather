@@ -64,7 +64,9 @@ export default {
     }
   },
   mounted: function () {
-    axios.get('https://api.openweathermap.org/data/2.5/weather?q=Urayasu,jp&units=metric&appid=' + this.apiKey)
+    console.log(this.apiKey)
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=Urayasu,jp&units=metric&appid=' + this.apiKey
+    axios.get(url)
       .then(function (response) {
         this.wind = response.data.wind.speed
         this.temp = response.data.main.temp
