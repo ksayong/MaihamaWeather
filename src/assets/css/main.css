@@ -90,6 +90,10 @@ select {
 }
 }
 
+#app {
+    width: 100%;
+}
+
 body > .wrapper {
     max-width: 100%;
 }
@@ -100,6 +104,8 @@ body > .wrapper {
 }
 
 .sky-color {
+    min-height: 100vh;
+    padding: 50px 0;
     width: 100%;
 }
 
@@ -119,9 +125,6 @@ body > .wrapper {
 .mainTitle {/*親div*/
     position: relative;/*相対配置*/
     padding: 35px;
-}
-.OperatingHours{
-    margin: 50px 0;
 }
 
 .mainTitle h1 {
