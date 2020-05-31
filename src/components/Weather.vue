@@ -59,13 +59,11 @@ export default {
       sunsetMinutes: null,
       condition: {
         main: null
-      },
-      apiKey: process.env.VUE_APP_WEATHER_API_KEY
+      }
     }
   },
   mounted: function () {
-    console.log(this.apiKey)
-    const url = 'https://api.openweathermap.org/data/2.5/weather?q=Urayasu,jp&units=metric&appid=' + this.apiKey
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=Urayasu,jp&units=metric&appid=' + process.env.VUE_APP_WEATHER_API_KEY
     axios.get(url)
       .then(function (response) {
         this.wind = response.data.wind.speed
