@@ -35,8 +35,8 @@
             <p v-else><img src="@/assets/image/sunny.png" alt="Sunset" class="weather_png"></p>
           </div>
           <div class="weather_info">
-            <p><img src="@/assets/image/Wind.png" alt="">風量{{}}<span>m</span></p>
-            <p><img src="@/assets/image/sunset.png" alt="">日没{{}}</p>
+            <p><img src="@/assets/image/Wind.png" alt="">風量 {{ wind }}<span> m</span></p>
+            <p><img src="@/assets/image/sunset.png" alt="">日没 {{ sunsetHours }}:{{ sunsetMinutes }}</p>
           </div>
         </div>
       </section>
@@ -52,8 +52,11 @@ export default {
   name: 'Weather',
   data () {
     return {
-      city: null,
+      wind: null,
       temp: null,
+      sunset: null,
+      sunsetHours: null,
+      sunsetMinutes: null,
       condition: {
         main: null
       }
@@ -62,8 +65,13 @@ export default {
   mounted: function () {
     axios.get('https://api.openweathermap.org/data/2.5/weather?q=Urayasu,jp&units=metric&appid=' + process.env.VUE_APP_WEATHER_API_KEY)
       .then(function (response) {
+        this.wind = response.data.wind.speed
         this.temp = response.data.main.temp
+        const sunsetTime = response.data.sys.sunset
         this.condition = response.data.weather[0]
+        this.sunset = new Date(sunsetTime * 1000)
+        this.sunsetHours = this.sunset.getHours()
+        this.sunsetMinutes = this.sunset.getMinutes()
       }.bind(this))
       .catch(function (error) {
         console.log(error)
