@@ -35,8 +35,14 @@
             <p v-else><img src="@/assets/image/sunny.png" alt="Sunset" class="weather_png"></p>
           </div>
           <div class="weather_info">
-            <p><img src="@/assets/image/Wind.png" alt="">風量 {{ wind }}<span> m</span></p>
-            <p><img src="@/assets/image/sunset.png" alt="">日没 {{ sunsetHours }}:{{ sunsetMinutes }}</p>
+            <p>
+              <img src="@/assets/image/Wind.png" alt="" class="weather_info_icon">
+              <span>風量 {{ wind }} m</span>
+            </p>
+            <p>
+              <img src="@/assets/image/sunset.png" alt="" class="weather_info_icon">
+              <span>日没 {{ sunsetHours }}:{{ sunsetMinutes }}</span>
+            </p>
           </div>
         </div>
       </section>

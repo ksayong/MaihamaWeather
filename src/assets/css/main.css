@@ -235,15 +235,16 @@ body > .wrapper {
         .weather_info{
             width: 30%;
             margin-left:40px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .weather_info_icon{
+            vertical-align: middle;
         }
         .weather_info p{
             font-size: 1.3em;
             color: #4d4d4d;
-            text-align: left;
-            line-height: normal;
-        }
-        .weather_info img{
-            width: 25%;
+            width: 100%;
         }
         @media screen and (max-width:560px){
             /*画面幅が560pxまでの時~スマホ対応~*/
